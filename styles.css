@@ -5,6 +5,13 @@ nav {
   padding: 5px;
 }
 
+hr{
+  background:url(razdel.png) no-repeat left;
+  background-size: contain;
+  border: 0;
+  height:11px;
+}
+
 .divnavbar {
   display: block;
   background-color: rgb(0, 0, 0);
