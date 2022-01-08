@@ -1,5 +1,3 @@
-document.getElementById("open").click();
-
 function Lang(evt, lang) {
     // Declare all variables
     var i, content, btnflip;

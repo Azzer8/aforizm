@@ -1,12 +1,28 @@
-nav {
+.nav_style {
   text-align: center;
-  font-size: 15px;
   padding: 5px;
+  background-color: rgb(0, 0, 0);
+  margin-top: 10px;
+  height: auto;
+  border-radius: 13px;
+  overflow: hidden;
+  background: #c0c0c0;
+  box-shadow:  5px 5px 10px #a7a7a7,
+                    -5px -5px 10px #e1e1e1;
 }
 
 body {
   background: #c0c0c0;
   font-family: Verdana;
+}
+
+@media (min-width:800px) {
+  body {
+    font-size: 20px;
+  }
+  .btnflip{
+    font-size: 20px;
+  }
 }
 
 .divmain {
@@ -17,21 +33,24 @@ body {
 
 .content {
   display: none;
+  animation: fadeEffect 1s;
+  -webkit-animation: fadeEffect 1s;
+}
+.content.active {
+  display: block;
+}
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
-.nav_style {
-  background-color: rgb(0, 0, 0);
-  margin-top: 10px;
-  width:100%;
-  height: auto;
-  border-radius: 13px;
-  overflow: hidden;
-  background: #c0c0c0;
-  box-shadow:  5px 5px 10px #a7a7a7,
-                    -5px -5px 10px #e1e1e1;
-} 
-
 .p_style {
+  margin-top: 23px;
+  margin-bottom: 23px;
   padding-left:12px;
   padding-right: 12px;
   display: block;
@@ -41,7 +60,6 @@ body {
   border-radius: 13px;
   box-shadow: inset 5px 5px 10px #a7a7a7,
               inset -5px -5px 10px #e1e1e1;
-
 }
 
 footer {
@@ -57,6 +75,11 @@ footer {
   border-radius: 13px;
   box-shadow:  5px 5px 10px #a7a7a7,
                     -5px -5px 10px #e1e1e1;
+}
+
+.img_style {
+  width: 15px;
+  height: 15px;
 }
 
 .nav_style button {
