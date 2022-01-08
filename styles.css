@@ -42,7 +42,7 @@ body {
 .p_style {
   margin-top: 23px;
   margin-bottom: 23px;
-  padding-left:12px;
+  padding: 6px 12px;
   display: block;
   background: #c0c0c0;
   width: 90%;
