@@ -1,11 +1,13 @@
-function openCity(evt, lang) {
+document.getElementById("open").click();
+
+function Lang(evt, lang) {
     // Declare all variables
-    var i, tabcontent, btnflip;
+    var i, content, btnflip;
 
     // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+    content = document.getElementsByClassName("content");
+    for (i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
     }
 
     // Get all elements with class="btnflip" and remove the class "active"

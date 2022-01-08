@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang='ru-RU'>
     <head>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,53 +6,39 @@
         <link rel="icon" type="image/x-icon" href="favicon.png">
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
-    <body style="background: #c0c0c0;font-family: Verdana;">
-        <script src="scripts2.js"></script>
-        <div class="divnavbar">
-            <nav>
-                <a href="" class="btnflip" data="dddddddd"></a>
-                <button onclick="displayResult1()" class="btnflip" data="Azərbaycan dilində"></button>
-                <button onclick="displayResult2()" class="btnflip" data="На русском"></button>
-            </nav>
-        </div>
+    <body>
+        <script src="scripts.js"></script>
+        <nav class="nav_style">
+            <button class="btnflip"   onclick="Lang(event, 'az')"  data="Azərbaycan dilində"></button>
+            <button class="btnflip" onclick="Lang(event, 'ru')"  id="open" data="На русском"></button>
+        </nav>
         <br>
-        <div style="margin-left:auto;margin-right:auto;width:fit-content">
-            <div id="Start">
-                <h2>
-                    Cıtatlar, aforizmlər və gözəl sözlər.<br>
-                    Цытаты, афоризмы и грамотные высказывания.
-                </h2>
-                <p style="font-size:18px;">
-                    <i>Yuxarıdakı knopkalardan birini basmaqla dili seçin.</i> 👆<br>
-                    <i>Выберите язык, нажав на одну из кнопок выше.</i> 👆
-                </p>
+        <div class="divmain">
+            <!--Русские афоризмы-->
+            <div id="ru" class="content">
+                <h2>Цытаты, афоризмы и грамотные высказывания.</h2>
+                <p style="font-size:18px;"><i>Выберите язык, нажав на одну из кнопок выше.</i> 👆</p>
+                <p class="p_style">рвааорада фравофрафо.</p>
             </div>
-            <div>
-                <div class="divprg">
-                    <p>Başladığın cümləni özün bitirməsən, bir başqası gəlib nöqtəni qoyar.</p>
-                </div>
-                <div class="divprg">
-                    <p>Bir şeyi həqiqətən istəyən bir yol tapar, istəməyənsə bəhanə tapar.</p>
-                </div>
-                <div class="divprg">
-                    <p>Bəzilərinə sadəcə bunu demək istəyirəm: Bağışlayın səhv tanımışam.</p>
-                </div>
-                <div class="divprg">
-                    <p>Mənzərə nə qədər gözəl olsa da, sizə zərər verən pəncərələri bağlayın.</p>
-                </div>
+            <!--Азербайджанские афоризмы-->
+            <div id="az" class="content">
+                <h2>Cıtatlar, aforizmlər və gözəl sözlər.</h2>
+                <p style="font-size:18px;"><i>Yuxarıdakı knopkalardan birini basmaqla dili seçin.</i> 👆</p>
+                <p class="p_style">Başladığın cümləni özün bitirməsən, bir başqası gəlib nöqtəni qoyar.</p>
+                <p class="p_style">Bir şeyi həqiqətən istəyən bir yol tapar, istəməyənsə bəhanə tapar.</p>
+                <p class="p_style">Bəzilərinə sadəcə bunu demək istəyirəm: Bağışlayın səhv tanımışam.</p>
+                <p class="p_style">Mənzərə nə qədər gözəl olsa da, sizə zərər verən pəncərələri bağlayın.</p>
             </div>
         </div>
         <br>
         <div class="divfooter">
             <footer>
-                <p>
                     &copy; 2022. PyatiVorsk Inc. <br>
                     Dastoynı bratva üçün dastoynı cıtatlar. <br>
                     Svyaz: 
                     <a href="https://www.instagram.com/tdjalshv/">
                         <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" style="width:12px;height:12px;">
                     </a>
-                </p>
             </footer>
         </div>
     </body>
