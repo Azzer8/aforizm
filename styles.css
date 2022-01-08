@@ -16,19 +16,10 @@ body {
   font-family: Verdana;
 }
 
-@media (min-width:800px) {
-  body {
-    font-size: 20px;
-  }
-  .btnflip{
-    font-size: 20px;
-  }
-}
-
 .divmain {
   margin-left:auto;
   margin-right:auto;
-  width:fit-content
+  width: fit-content;
 }
 
 .content {
@@ -52,7 +43,6 @@ body {
   margin-top: 23px;
   margin-bottom: 23px;
   padding-left:12px;
-  padding-right: 12px;
   display: block;
   background: #c0c0c0;
   width: 90%;
@@ -139,4 +129,23 @@ footer {
   content: attr(data);
   transform: translateY(0) rotateX(0);
   border-radius: 10px;
+}
+
+
+@media screen and (min-width:800px) {
+  body {
+    font-size: 20px;
+  }
+  .btnflip{
+    font-size: 20px;
+  }
+  .img_style {
+    width: 17px;
+    height: 17px;
+  }
+  .div_ru {
+    margin-left:auto;
+    margin-right:auto;
+    width: 61%;
+  }
 }
