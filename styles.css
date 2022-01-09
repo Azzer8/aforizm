@@ -16,6 +16,11 @@ body {
   font-family: Verdana;
 }
 
+p::selection, h3::selection, footer::selection, .nav_style::selection, .div_afo::selection,
+.img_style::selection, br::selection, s::selection, u::selection {
+  background: white;
+}
+
 .divmain {
   margin-left:auto;
   margin-right:auto;
