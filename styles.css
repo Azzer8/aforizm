@@ -93,6 +93,7 @@ footer {
   display: inline-block;
   text-decoration: none;
   font-family: "Verdana";
+  font-size: 15px;
   cursor: pointer;
 }
 .btnflip:hover:after {
@@ -101,7 +102,7 @@ footer {
 }
 .btnflip:hover:before {
   opacity: 0;
-  transform: translateY(50%) rotateX(90deg);
+  transform: translateY(-50%) rotateX(90deg);
 }
 .btnflip:after {
   top: 0;
