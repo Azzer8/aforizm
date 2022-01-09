@@ -94,6 +94,7 @@ footer {
   text-decoration: none;
   font-family: "Verdana";
   font-size: 13px;
+  cursor: pointer;
 }
 .btnflip:hover:after {
   opacity: 1;
@@ -137,6 +138,28 @@ footer {
   border-radius: 10px;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 99;
+  font-size: 19px;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 20px 50px;
+  border-radius: 13px;
+  background-image: url("up-button.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#myBtn:hover {
+  background-color: rgb(70, 70, 70);
+}
 
 @media screen and (min-width:800px) {
   body, .btnflip {
@@ -150,5 +173,9 @@ footer {
     margin-left:auto;
     margin-right:auto;
     width: 75%;
+  }
+  #myBtn {
+    right: 50px;
+    padding: 18px;
   }
 }
