@@ -88,6 +88,7 @@ footer {
   display: inline-block;
   text-decoration: none;
   font-family: "Verdana";
+  font-size: 14px;
 }
 .btnflip:hover:after {
   opacity: 1;
@@ -133,11 +134,8 @@ footer {
 
 
 @media screen and (min-width:800px) {
-  body {
-    font-size: 20px;
-  }
-  .btnflip{
-    font-size: 20px;
+  body, .btnflip {
+    font-size: 19px;
   }
   .img_style {
     width: 17px;
