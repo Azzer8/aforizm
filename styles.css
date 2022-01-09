@@ -88,7 +88,7 @@ footer {
   display: inline-block;
   text-decoration: none;
   font-family: "Verdana";
-  font-size: 14px;
+  font-size: 13.5px;
 }
 .btnflip:hover:after {
   opacity: 1;
