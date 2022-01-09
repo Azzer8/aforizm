@@ -93,7 +93,7 @@ footer {
   display: inline-block;
   text-decoration: none;
   font-family: "Verdana";
-  font-size: 12px;
+  font-size: 13px;
   cursor: pointer;
 }
 .btnflip:hover:after {
